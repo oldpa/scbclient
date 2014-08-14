@@ -5,8 +5,6 @@ scbclient is a wrapper around the [Statistiska centralbyrån API](http://www.scb
 
 I'm going to show you some examples using ipython notebook. Here is how you import and explore the API.
 
-Examples
-========
 
 ![example](ext/notebook1.png)
 
