@@ -160,7 +160,11 @@ class Result:
         for row in self.data:
             html += '<tr>'
             for col in row:
-                html += '<td>%s</td>' % str(col)
+                if isinstance(col, unicode):
+                    value = col
+                else:
+                    value = unicode(col)
+                html += '<td>%s</td>' % value
             html += '</tr>'
         html += '</table>'
         return html
